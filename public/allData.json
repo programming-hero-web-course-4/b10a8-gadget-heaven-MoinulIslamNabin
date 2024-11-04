@@ -1,12 +1,12 @@
 [
     {
-        "product_id": "P001",
-        "product_title": "Samsung Galaxy S21",
-        "product_image": "https://example.com/images/galaxy_s21.jpg",
+        "id": "P001",
+        "title": "Samsung Galaxy S21",
+        "img": "https://i.ibb.co.com/xMWygFM/Samsung-Galaxy-S21-FE-5-G-image1-600x508.webp",
         "category": "Phones",
         "price": 799,
         "description": "The Samsung Galaxy S21 with a stunning 6.2-inch Dynamic AMOLED display.",
-        "Specification": [
+        "specs": [
             "6.2-inch Display",
             "8GB RAM",
             "128GB Storage",
@@ -17,13 +17,13 @@
         "rating": 4.5
     },
     {
-        "product_id": "P002",
-        "product_title": "iPhone 12",
-        "product_image": "https://example.com/images/iphone_12.jpg",
+        "id": "P002",
+        "title": "iPhone 12",
+        "img": "https://i.ibb.co.com/p334k5K/1533-48820.jpg",
         "category": "Phones",
         "price": 699,
         "description": "Apple iPhone 12 with a 6.1-inch Super Retina XDR display.",
-        "Specification": [
+        "specs": [
             "6.1-inch Display",
             "4GB RAM",
             "64GB Storage",
@@ -34,13 +34,47 @@
         "rating": 4.7
     },
     {
-        "product_id": "L001",
-        "product_title": "Dell XPS 13",
-        "product_image": "https://example.com/images/xps_13.jpg",
+        "id": "P003",
+        "title": "Google Pixel 5",
+        "img": "https://i.ibb.co.com/V3TwYBr/Google-Pixel-5.jpg",
+        "category": "Phones",
+        "price": 699,
+        "description": "Google Pixel 5 with an excellent camera and stock Android experience.",
+        "specs": [
+            "6.0-inch Display",
+            "8GB RAM",
+            "128GB Storage",
+            "4080mAh Battery",
+            "Dual Rear Camera"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "id": "P004",
+        "title": "OnePlus 9",
+        "img": "https://i.ibb.co.com/xh611jw/71d-C5te3-Fa-S.jpg",
+        "category": "Phones",
+        "price": 729,
+        "description": "OnePlus 9 with Hasselblad camera and 120Hz display.",
+        "specs": [
+            "6.55-inch Display",
+            "8GB RAM",
+            "128GB Storage",
+            "4500mAh Battery",
+            "Triple Rear Camera"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "id": "L001",
+        "title": "Dell XPS 13",
+        "img": "https://i.ibb.co.com/mJrWLGd/Dell-XPS-13-9300-Intel-Core-i7-1065-G7-1-3-GHz-Win-10-Pro-Iris-Plus-Graphics-16-GB-RAM-512-SSD-NVMe.webp",
         "category": "Laptops",
         "price": 999,
         "description": "Dell XPS 13 laptop with a powerful Intel i7 processor and ultra-thin design.",
-        "Specification": [
+        "specs": [
             "13.3-inch FHD Display",
             "Intel i7 Processor",
             "16GB RAM",
@@ -51,13 +85,13 @@
         "rating": 4.8
     },
     {
-        "product_id": "L002",
-        "product_title": "MacBook Air M1",
-        "product_image": "https://example.com/images/macbook_air_m1.jpg",
+        "id": "L002",
+        "title": "MacBook Air M1",
+        "img": "https://i.ibb.co.com/ym9ZQHH/images.jpg",
         "category": "MacBooks",
         "price": 1199,
         "description": "Apple MacBook Air with M1 chip for incredible performance.",
-        "Specification": [
+        "specs": [
             "13.3-inch Retina Display",
             "Apple M1 Chip",
             "8GB RAM",
@@ -68,13 +102,30 @@
         "rating": 4.9
     },
     {
-        "product_id": "A001",
-        "product_title": "JBL Wireless Earbuds",
-        "product_image": "https://example.com/images/jbl_earbuds.jpg",
+        "id": "L003",
+        "title": "HP Spectre x360",
+        "img": "https://i.ibb.co.com/RNbMFDD/Hp-Spectre-x360-Convertible-13-aw2000-Core-i5-11th-Gen-Laptop-1.jpg",
+        "category": "Laptops",
+        "price": 1299,
+        "description": "HP Spectre x360 with flexible design and powerful performance.",
+        "specs": [
+            "13.3-inch FHD Touch Display",
+            "Intel i7 Processor",
+            "16GB RAM",
+            "1TB SSD",
+            "Integrated Graphics"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "id": "A001",
+        "title": "JBL Wireless Earbuds",
+        "img": "https://i.ibb.co.com/2sMwLkc/64cbe8eefef57507687a179a-jbl-tune-125-true-wireless-headphones.jpg",
         "category": "Accessories",
         "price": 150,
         "description": "JBL wireless earbuds with noise-cancellation and high-quality sound.",
-        "Specification": [
+        "specs": [
             "Bluetooth 5.0",
             "Active Noise Cancellation",
             "Up to 20 Hours Battery Life",
@@ -84,13 +135,13 @@
         "rating": 4.6
     },
     {
-        "product_id": "A002",
-        "product_title": "Logitech MX Master 3 Mouse",
-        "product_image": "https://example.com/images/mx_master_3.jpg",
+        "id": "A002",
+        "title": "Logitech MX Master 3 Mouse",
+        "img": "https://i.ibb.co.com/0BRVkWm/Logitech-MX-Master-3-review-04.jpg",
         "category": "Accessories",
         "price": 99,
         "description": "Logitech MX Master 3 advanced wireless mouse with customizable buttons.",
-        "Specification": [
+        "specs": [
             "Wireless",
             "USB-C Charging",
             "4000 DPI Sensor",
@@ -100,13 +151,13 @@
         "rating": 4.7
     },
     {
-        "product_id": "SW001",
-        "product_title": "Apple Watch Series 6",
-        "product_image": "https://example.com/images/apple_watch_6.jpg",
+        "id": "SW001",
+        "title": "Apple Watch Series 6",
+        "img": "https://i.ibb.co.com/TK4Jz3m/Pre-Owned-Apple-Watch-Series-6-40mm-Wi-Fi-Only-Space-Gray-Smart-Watch-b6acc69b-c6f3-473a-ab73-9ebb98.webp",
         "category": "Smart Watches",
         "price": 399,
         "description": "Apple Watch Series 6 with blood oxygen monitoring and ECG app.",
-        "Specification": [
+        "specs": [
             "44mm Display",
             "Blood Oxygen Monitor",
             "ECG App",
@@ -116,13 +167,13 @@
         "rating": 4.8
     },
     {
-        "product_id": "SW002",
-        "product_title": "Samsung Galaxy Watch 3",
-        "product_image": "https://example.com/images/galaxy_watch_3.jpg",
+        "id": "SW002",
+        "title": "Samsung Galaxy Watch 3",
+        "img": "https://i.ibb.co.com/bmG0wg1/images.jpg",
         "category": "Smart Watches",
         "price": 349,
         "description": "Samsung Galaxy Watch 3 with advanced health tracking features.",
-        "Specification": [
+        "specs": [
             "41mm Display",
             "Heart Rate Monitor",
             "Sleep Tracking",
@@ -132,30 +183,13 @@
         "rating": 4.6
     },
     {
-        "product_id": "M001",
-        "product_title": "MacBook Pro 14-inch M1",
-        "product_image": "https://example.com/images/macbook_pro_14.jpg",
-        "category": "MacBooks",
-        "price": 1999,
-        "description": "MacBook Pro with M1 Pro chip and stunning 14-inch Retina display.",
-        "Specification": [
-            "14-inch Retina Display",
-            "Apple M1 Pro Chip",
-            "16GB RAM",
-            "512GB SSD",
-            "Integrated Graphics"
-        ],
-        "availability": true,
-        "rating": 4.9
-    },
-    {
-        "product_id": "IP001",
-        "product_title": "iPhone 13 Pro",
-        "product_image": "https://example.com/images/iphone_13_pro.jpg",
+        "id": "IP001",
+        "title": "iPhone 13 Pro",
+        "img": "https://i.ibb.co.com/3zXYVQf/Total-by-Verizon-Apple-i-Phone-13-Pro-Max-128-GB-Gold-Prepaid-Smartphone-Locked-to-Total-by-Verizon.webp",
         "category": "iPhone",
         "price": 999,
         "description": "Apple iPhone 13 Pro with ProMotion technology and A15 Bionic chip.",
-        "Specification": [
+        "specs": [
             "6.1-inch Display",
             "A15 Bionic Chip",
             "128GB Storage",
@@ -164,22 +198,5 @@
         ],
         "availability": true,
         "rating": 4.9
-    },
-    {
-        "product_id": "IP002",
-        "product_title": "iPhone SE (2022)",
-        "product_image": "https://example.com/images/iphone_se_2022.jpg",
-        "category": "iPhone",
-        "price": 429,
-        "description": "Apple iPhone SE with A15 Bionic chip and compact design.",
-        "Specification": [
-            "4.7-inch Display",
-            "A15 Bionic Chip",
-            "64GB Storage",
-            "Touch ID",
-            "Single Rear Camera"
-        ],
-        "availability": true,
-        "rating": 4.5
     }
 ]
