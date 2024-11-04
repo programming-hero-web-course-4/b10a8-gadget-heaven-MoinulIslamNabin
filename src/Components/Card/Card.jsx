@@ -14,10 +14,10 @@ const Card = ({ card }) => {
         />
       </figure>
       <div className="card-body p-4">
-        <h2 className="card-title">{title}</h2>
-        <p>{description}</p>
+        <h2 className="card-title text-xl font-bold">{title}</h2>
+        <p className="text-base font-semibold text-black/60">Price:{price}k</p>
         <div className="card-actions">
-          <button className="btn rounded-full btn-outline text-[#9538E2] border-[#9538E2]">
+          <button className="btn rounded-full btn-outline text-[#9538E2] font-bold border-[#9538E2]">
            View Details
           </button>
         </div>

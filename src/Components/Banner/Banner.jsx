@@ -19,8 +19,8 @@ const Banner = () => {
                     backgroundColor: 'white',
                     color: '#9538E2',
                     fontWeight: 700,
-                    
                   }}
+                  onClick={() => window.location.href = '#home'}
                 />
           </div>
         </div>
