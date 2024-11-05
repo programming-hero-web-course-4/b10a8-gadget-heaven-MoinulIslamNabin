@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
 import { useNavigation } from "react-router-dom";
 
-const AllProduct = () => {
+const AllProduct = ({ filter }) => {
+  console.log(filter);
   const navigation = useNavigation();
 
   const [allCard, setAllCard] = useState([]);
@@ -15,13 +16,14 @@ const AllProduct = () => {
 
   return (
     <>
-      {Array.isArray(allCard) && allCard.map((card) =>
-        navigation.state === "loading" ? (
-          <Skeleton key={card.id}></Skeleton>
-        ) : (
-          <Card key={card.id} card={card}></Card>
-        )
-      )}
+      {Array.isArray(allCard) &&
+        allCard.map((card) =>
+          navigation.state === "loading" ? (
+            <Skeleton key={card.id}></Skeleton>
+          ) : (
+            <Card key={card.id} card={card}></Card>
+          )
+        )}
     </>
   );
 };

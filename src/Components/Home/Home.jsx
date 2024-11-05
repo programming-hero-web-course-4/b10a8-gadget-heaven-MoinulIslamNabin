@@ -3,15 +3,17 @@ import Vr from "../../assets/banner.jpg";
 import "./Home.css";
 import { useNavigation } from "react-router-dom";
 import AllProduct from "../AllProduct/AllProduct";
+import Laptop from "../Laptop/Laptop";
+import Phone from "../Phone/Phone";
+import Accessories from "../Accessories/Accessories";
+import SmartWatch from "../SmartWatch/SmartWatch";
+import MacBook from "../MacBook/MacBook";
+import Iphone from "../Iphone/Iphone";
 
 const Home = () => {
   const navigation = useNavigation();
 
-  const [isActive, setIsActive] = useState(true);
-
-  const handleActive = () => {
-    setIsActive(!isActive);
-  };
+  const [isActive, setIsActive] = useState("all");
 
   const [allCard, setAllCard] = useState([]);
 
@@ -38,67 +40,71 @@ const Home = () => {
       <div className="flex gap-6 flex-col lg:flex-row ">
         <div className="w-full lg:w-1/4 lg:h-min py-4 px-2 lg:px-0 rounded-2xl bg-white gap-4 flex flex-wrap flex-row lg:flex-col justify-center items-center">
           <button
-            onClick={handleActive}
-            className= {isActive ? "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white" : "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60" } 
+            onClick={() => setIsActive("all")}
+            className={
+              isActive == "all"
+                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+                : "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
+            }
           >
             All Poducts
           </button>
           <button
-            onClick={handleActive}
-           className={
-              isActive
-                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
-                : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
-            }
-          >
-            Laptops
-          </button>
-          <button
-            onClick={handleActive}
-           className={
-              isActive
-                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
-                : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+            onClick={() => setIsActive("Phones")}
+            className={
+              isActive == "Phones"
+                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+                : "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
             }
           >
             Phones
           </button>
           <button
-            onClick={handleActive}
-           className={
-              isActive
-                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
-                : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+            onClick={() => setIsActive("Laptops")}
+            className={
+              isActive == "Laptops"
+                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+                : "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
+            }
+          >
+            Laptops
+          </button>
+          <button
+            onClick={() => setIsActive("Accessories")}
+            className={
+              isActive == "Accessories"
+                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+                : "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
             }
           >
             Accessories
           </button>
           <button
-            onClick={handleActive}
-           className={
-              isActive
-                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
-                : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+            onClick={() => setIsActive("SmartWatches")}
+            className={
+              isActive == "SmartWatches"
+                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+                : "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
             }
           >
             Smart Watches
           </button>
           <button
-            onClick={handleActive}
-           className={
-              isActive
-                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
-                : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+            onClick={() => setIsActive("MacBooks")}
+            className={
+              isActive == "MacBooks"
+                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+                : "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
             }
           >
             MacBooks
           </button>
           <button
-            onClick={handleActive}
-           className={
-              isActive
-                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
-                : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+            onClick={() => setIsActive("Iphones")}
+            className={
+              isActive == "Iphones"
+                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+                : "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
             }
           >
             Iphones
@@ -110,7 +116,13 @@ const Home = () => {
           </button>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 w-full lg:w-3/4">
-          <AllProduct></AllProduct>
+          {isActive == "all" && <AllProduct></AllProduct>}
+          {isActive == "Laptops" && <Laptop></Laptop>}
+          {isActive == "Phones" && <Phone></Phone>}
+          {isActive == "Accessories" && <Accessories></Accessories>}
+          {isActive == "SmartWatches" && <SmartWatch></SmartWatch>}
+          {isActive == "MacBooks" && <MacBook></MacBook>}
+          {isActive == "Iphones" && <Iphone></Iphone>}
         </div>
       </div>
     </div>
