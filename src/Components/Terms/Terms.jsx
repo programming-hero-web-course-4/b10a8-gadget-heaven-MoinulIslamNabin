@@ -1,10 +1,13 @@
 import React from 'react';
+import TermsBanner from '../TermsBanner/TermsBanner';
+import TermsHome from '../TermsHome/TermsHome';
 
 const Terms = () => {
     return (
-        <div>
-            terms
-        </div>
+        <>
+            <TermsBanner></TermsBanner>
+            <TermsHome></TermsHome>
+        </>
     );
 };
 
