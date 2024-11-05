@@ -7,10 +7,96 @@ import AllProduct from "../AllProduct/AllProduct";
 const Home = () => {
   const navigation = useNavigation();
 
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState({
+    all: true,
+    laptop: false,
+    phone: false,
+    access: false,
+    mac: false,
+    smart: false,
+    iphone: false,
+    status: "all",
+  });
 
-  const handleActive = () => {
-    setIsActive(!isActive);
+  const handleActive = (status) => {
+    if (status === "all") {
+      setIsActive({
+        all: true,
+        laptop: false,
+        phone: false,
+        access: false,
+        mac: false,
+        smart: false,
+        iphone: false,
+        status: "all",
+      });
+    } else if (status === "laptop") {
+      setIsActive({
+        all: false,
+        laptop: true,
+        phone: false,
+        access: false,
+        mac: false,
+        smart: false,
+        iphone: false,
+        status: "laptop",
+      });
+    } else if (status === "phone") {
+      setIsActive({
+        all: false,
+        laptop: false,
+        phone: true,
+        access: false,
+        mac: false,
+        smart: false,
+        iphone: false,
+        status: "phone",
+      });
+    } else if (status === "access") {
+      setIsActive({
+        all: false,
+        laptop: false,
+        phone: false,
+        access: true,
+        mac: false,
+        smart: false,
+        iphone: false,
+        status: "access",
+      });
+    } else if (status === "mac") {
+      setIsActive({
+        all: false,
+        laptop: false,
+        phone: false,
+        access: false,
+        mac: true,
+        smart: false,
+        iphone: false,
+        status: "mac",
+      });
+    } else if (status === "smart") {
+      setIsActive({
+        all: false,
+        laptop: false,
+        phone: false,
+        access: false,
+        mac: false,
+        smart: true,
+        iphone: false,
+        status: "smart",
+      });
+    } else if (status === "iphone") {
+      setIsActive({
+        all: false,
+        laptop: false,
+        phone: false,
+        access: false,
+        mac: false,
+        smart: false,
+        iphone: true,
+        status: "iphone",
+      });
+    }
   };
 
   const [allCard, setAllCard] = useState([]);
@@ -21,7 +107,7 @@ const Home = () => {
       .then((data) => setAllCard(data));
   }, []);
 
-  console.log(allCard);
+  
 
   return (
     <div className="container mx-auto px-14">
@@ -38,14 +124,18 @@ const Home = () => {
       <div className="flex gap-6 flex-col lg:flex-row ">
         <div className="w-full lg:w-1/4 lg:h-min py-4 px-2 lg:px-0 rounded-2xl bg-white gap-4 flex flex-wrap flex-row lg:flex-col justify-center items-center">
           <button
-            onClick={handleActive}
-            className= {isActive ? "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white" : "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60" } 
+            onClick={() => handleActive("all")}
+            className={
+              isActive
+                ? "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
+                : "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
+            }
           >
             All Poducts
           </button>
           <button
-            onClick={handleActive}
-           className={
+            onClick={() => handleActive("laptop")}
+            className={
               isActive
                 ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
                 : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
@@ -54,8 +144,8 @@ const Home = () => {
             Laptops
           </button>
           <button
-            onClick={handleActive}
-           className={
+            onClick={() => handleActive("phone")}
+            className={
               isActive
                 ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
                 : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
@@ -64,8 +154,8 @@ const Home = () => {
             Phones
           </button>
           <button
-            onClick={handleActive}
-           className={
+            onClick={() => handleActive("access")}
+            className={
               isActive
                 ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
                 : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
@@ -74,8 +164,8 @@ const Home = () => {
             Accessories
           </button>
           <button
-            onClick={handleActive}
-           className={
+            onClick={() => handleActive("smart")}
+            className={
               isActive
                 ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
                 : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
@@ -84,8 +174,8 @@ const Home = () => {
             Smart Watches
           </button>
           <button
-            onClick={handleActive}
-           className={
+            onClick={() => handleActive("mac")}
+            className={
               isActive
                 ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
                 : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"
@@ -94,8 +184,8 @@ const Home = () => {
             MacBooks
           </button>
           <button
-            onClick={handleActive}
-           className={
+            onClick={() => handleActive("iphone")}
+            className={
               isActive
                 ? "btn w-auto lg:w-5/6 rounded-full border-none bg-slate-100 btn-outline text-black/60"
                 : "btn w-auto lg:w-5/6 rounded-full border-none bg-[#9538E2] btn-outline text-white"

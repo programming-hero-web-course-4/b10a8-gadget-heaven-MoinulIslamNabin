@@ -39,7 +39,7 @@ const Navbar = () => {
                   </svg>
                 </label>
               </div>
-              <div className="drawer-side">
+              <div className="drawer-side z-30">
                 <label
                   htmlFor="my-drawer"
                   aria-label="close sidebar"
@@ -47,25 +47,25 @@ const Navbar = () => {
                 ></label>
                 <nav className="menu bg-[#9538E2] text-base-content min-h-full w-80 p-4">
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/"}
                   >
                     Home
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Statistics"}
                   >
                     Statistics
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Dashboard"}
                   >
                     Dashboard
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Terms"}
                   >
                     Terms & Conditions
@@ -79,23 +79,23 @@ const Navbar = () => {
           </div>
           <div className="navbar-center hidden lg:flex">
             <nav className="menu menu-horizontal px-1 gap-4">
-              <NavLink className={"text-base text-white/60 font-bold p-2"} to={"/"}>
+              <NavLink className={"text-base text-white/60 font-bold p-2 nav-hover"} to={"/"}>
                 Home
               </NavLink>
               <NavLink
-                className={"text-base text-white/60 font-bold p-2"}
+                className={"text-base text-white/60 font-bold p-2 nav-hover"}
                 to={"/Statistics"}
               >
                 Statistics
               </NavLink>
               <NavLink
-                className={"text-base text-white/60 font-bold p-2"}
+                className={"text-base text-white/60 font-bold p-2 nav-hover"}
                 to={"/Dashboard"}
               >
                 Dashboard
               </NavLink>
               <NavLink
-                className={"text-base text-white/60 font-bold p-2"}
+                className={"text-base text-white/60 font-bold p-2 nav-hover"}
                 to={"/Terms"}
               >
                 Terms & Conditions
@@ -173,7 +173,7 @@ const Navbar = () => {
                   </svg>
                 </label>
               </div>
-              <div className="drawer-side">
+              <div className="drawer-side z-30">
                 <label
                   htmlFor="my-drawer"
                   aria-label="close sidebar"
@@ -181,25 +181,25 @@ const Navbar = () => {
                 ></label>
                 <nav className="menu bg-[#9538E2] text-base-content min-h-full w-80 p-4">
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/"}
                   >
                     Home
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Statistics"}
                   >
                     Statistics
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Dashboard"}
                   >
                     Dashboard
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Terms"}
                   >
                     Terms & Conditions
@@ -213,23 +213,23 @@ const Navbar = () => {
           </div>
           <div className="navbar-center hidden lg:flex">
             <nav className="menu menu-horizontal px-1 gap-4">
-              <NavLink className={"text-base text-black/60 font-bold p-2"} to={"/"}>
+              <NavLink className={"text-base text-black/60 font-bold p-2 nav-hover"} to={"/"}>
                 Home
               </NavLink>
               <NavLink
-                className={"text-base text-black/60 font-bold p-2"}
+                className={"text-base text-black/60 font-bold p-2 nav-hover"}
                 to={"/Statistics"}
               >
                 Statistics
               </NavLink>
               <NavLink
-                className={"text-base text-black/60 font-bold p-2"}
+                className={"text-base text-black/60 font-bold p-2 nav-hover"}
                 to={"/Dashboard"}
               >
                 Dashboard
               </NavLink>
               <NavLink
-                className={"text-base text-black/60 font-bold p-2"}
+                className={"text-base text-black/60 font-bold p-2 nav-hover"}
                 to={"/Terms"}
               >
                 Terms & Conditions
@@ -305,7 +305,7 @@ const Navbar = () => {
                   </svg>
                 </label>
               </div>
-              <div className="drawer-side">
+              <div className="drawer-side z-30">
                 <label
                   htmlFor="my-drawer"
                   aria-label="close sidebar"
@@ -313,25 +313,25 @@ const Navbar = () => {
                 ></label>
                 <nav className="menu bg-[#9538E2] text-base-content min-h-full w-80 p-4">
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/"}
                   >
                     Home
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Statistics"}
                   >
                     Statistics
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Dashboard"}
                   >
                     Dashboard
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Terms"}
                   >
                     Terms & Conditions
@@ -345,23 +345,23 @@ const Navbar = () => {
           </div>
           <div className="navbar-center hidden lg:flex">
             <nav className="menu menu-horizontal px-1 gap-4">
-              <NavLink className={"text-base text-black/60 font-bold p-2"} to={"/"}>
+              <NavLink className={"text-base text-black/60 font-bold p-2 nav-hover"} to={"/"}>
                 Home
               </NavLink>
               <NavLink
-                className={"text-base text-black/60 font-bold p-2"}
+                className={"text-base text-black/60 font-bold p-2 nav-hover"}
                 to={"/Statistics"}
               >
                 Statistics
               </NavLink>
               <NavLink
-                className={"text-base text-black/60 font-bold p-2"}
+                className={"text-base text-black/60 font-bold p-2 nav-hover"}
                 to={"/Dashboard"}
               >
                 Dashboard
               </NavLink>
               <NavLink
-                className={"text-base text-black/60 font-bold p-2"}
+                className={"text-base text-black/60 font-bold p-2 nav-hover"}
                 to={"/Terms"}
               >
                 Terms & Conditions
@@ -437,7 +437,7 @@ const Navbar = () => {
                   </svg>
                 </label>
               </div>
-              <div className="drawer-side">
+              <div className="drawer-side z-30">
                 <label
                   htmlFor="my-drawer"
                   aria-label="close sidebar"
@@ -445,25 +445,25 @@ const Navbar = () => {
                 ></label>
                 <nav className="menu bg-[#9538E2] text-base-content min-h-full w-80 p-4">
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/"}
                   >
                     Home
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Statistics"}
                   >
                     Statistics
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Dashboard"}
                   >
                     Dashboard
                   </NavLink>
                   <NavLink
-                    className={"text-base text-white/60 font-bold p-2"}
+                    className={"text-base text-white/60 font-bold p-2 nav-hover"}
                     to={"/Terms"}
                   >
                     Terms & Conditions
@@ -477,23 +477,23 @@ const Navbar = () => {
           </div>
           <div className="navbar-center hidden lg:flex">
             <nav className="menu menu-horizontal px-1 gap-4">
-              <NavLink className={"text-base text-black/60 font-bold p-2"} to={"/"}>
+              <NavLink className={"text-base text-black/60 font-bold p-2 nav-hover"} to={"/"}>
                 Home
               </NavLink>
               <NavLink
-                className={"text-base text-black/60 font-bold p-2"}
+                className={"text-base text-black/60 font-bold p-2 nav-hover"}
                 to={"/Statistics"}
               >
                 Statistics
               </NavLink>
               <NavLink
-                className={"text-base text-black/60 font-bold p-2"}
+                className={"text-base text-black/60 font-bold p-2 nav-hover"}
                 to={"/Dashboard"}
               >
                 Dashboard
               </NavLink>
               <NavLink
-                className={"text-base text-black/60 font-bold p-2"}
+                className={"text-base text-black/60 font-bold p-2 nav-hover"}
                 to={"/Terms"}
               >
                 Terms & Conditions

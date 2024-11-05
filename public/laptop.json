@@ -1,0 +1,70 @@
+[
+    {
+        "id": "L0021",
+        "title": "Dell XPS 13",
+        "img": "https://i.ibb.co.com/pf4zMjS/images.jpg",
+        "category": "Laptops",
+        "price": 999,
+        "description": "Dell XPS 13 laptop with a powerful Intel i7 processor and ultra-thin design.",
+        "specs": [
+            "13.3-inch FHD Display",
+            "Intel i7 Processor",
+            "16GB RAM",
+            "512GB SSD",
+            "Integrated Graphics"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "id": "L0022",
+        "title": "HP Spectre x360",
+        "img": "https://i.ibb.co.com/RNbMFDD/Hp-Spectre-x360-Convertible-13-aw2000-Core-i5-11th-Gen-Laptop-1.jpg",
+        "category": "Laptops",
+        "price": 1299,
+        "description": "HP Spectre x360 with flexible design and powerful performance.",
+        "specs": [
+            "13.3-inch FHD Touch Display",
+            "Intel i7 Processor",
+            "16GB RAM",
+            "1TB SSD",
+            "Integrated Graphics"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "id": "L0023",
+        "title": "Lenovo ThinkPad X1 Carbon",
+        "img": "https://i.ibb.co.com/hfcjZHZ/Lenovo-Think-Pad-X1-Custom-Mac-BD-1200x1200.webp",
+        "category": "Laptops",
+        "price": 1399,
+        "description": "Lenovo ThinkPad X1 Carbon, known for durability and professional performance.",
+        "specs": [
+            "14-inch UHD Display",
+            "Intel i7 Processor",
+            "16GB RAM",
+            "1TB SSD",
+            "Integrated Graphics"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "id": "L0024",
+        "title": "ASUS ROG Zephyrus G14",
+        "img": "https://i.ibb.co.com/tCw1QGC/images.jpg",
+        "category": "Laptops",
+        "price": 1499,
+        "description": "ASUS ROG Zephyrus G14 with powerful graphics for gaming enthusiasts.",
+        "specs": [
+            "14-inch QHD Display",
+            "AMD Ryzen 9 Processor",
+            "16GB RAM",
+            "1TB SSD",
+            "NVIDIA GeForce RTX 3060"
+        ],
+        "availability": true,
+        "rating": 4.8
+    }
+]

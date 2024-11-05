@@ -1,0 +1,70 @@
+[
+    {
+        "id": "IP0032",
+        "title": "iPhone 12",
+        "img": "https://i.ibb.co.com/p334k5K/1533-48820.jpg",
+        "category": "Phones",
+        "price": 699,
+        "description": "Apple iPhone 12 with a 6.1-inch Super Retina XDR display.",
+        "specs": [
+            "6.1-inch Display",
+            "4GB RAM",
+            "64GB Storage",
+            "2815mAh Battery",
+            "Dual Rear Camera"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "id": "IP0032",
+        "title": "iPhone 13",
+        "img": "https://i.ibb.co.com/yR7vDDJ/images.jpg",
+        "category": "Iphones",
+        "price": 799,
+        "description": "iPhone 13 with improved battery life and camera performance, designed for everyday use.",
+        "specs": [
+            "6.1-inch Super Retina XDR Display",
+            "A15 Bionic Chip",
+            "Dual 12MP Camera System",
+            "Up to 19 hours of video playback",
+            "128GB Storage"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "id": "IP0031",
+        "title": "iPhone 13 Pro",
+        "img": "https://i.ibb.co.com/3zXYVQf/Total-by-Verizon-Apple-i-Phone-13-Pro-Max-128-GB-Gold-Prepaid-Smartphone-Locked-to-Total-by-Verizon.webp",
+        "category": "iPhone",
+        "price": 999,
+        "description": "Apple iPhone 13 Pro with ProMotion technology and A15 Bionic chip.",
+        "specs": [
+            "6.1-inch Display",
+            "A15 Bionic Chip",
+            "128GB Storage",
+            "5G Compatible",
+            "Triple Rear Camera"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "id": "IP0034",
+        "title": "iPhone 13 Pro Max",
+        "img": "https://i.ibb.co.com/LxpBR1B/Apple-i-Phone-13-Pro-Max-256-GB-Sierra-Blue-LTE-Cellular-MLEQ3-LL-A-1a8217bb-9dab-4eeb-8aae-9b8ded70.webp",
+        "category": "Iphones",
+        "price": 1099,
+        "description": "Largest model in the iPhone 13 lineup with ProMotion and exceptional battery life.",
+        "specs": [
+            "6.7-inch Super Retina XDR Display with ProMotion",
+            "A15 Bionic Chip",
+            "Triple 12MP Camera System",
+            "Up to 28 hours of video playback",
+            "256GB Storage"
+        ],
+        "availability": true,
+        "rating": 5.0
+    }
+]

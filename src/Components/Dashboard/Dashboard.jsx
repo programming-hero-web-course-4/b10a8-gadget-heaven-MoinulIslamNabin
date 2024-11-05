@@ -1,10 +1,13 @@
 import React from 'react';
+import DashBanner from '../DashBanner/DashBanner';
+import DashHome from '../DashHome/DashHome';
 
 const Dashboard = () => {
     return (
-        <div>
-            dash
-        </div>
+        <>
+            <DashBanner></DashBanner>
+            <DashHome></DashHome>
+        </>
     );
 };
 

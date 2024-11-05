@@ -5,3 +5,10 @@
     border-radius: 8px;
 
 }
+
+.nav-hover:hover {
+    background-color: #9538E2;
+    border-radius: 8px;
+    color: white;
+    text-decoration: underline;
+}

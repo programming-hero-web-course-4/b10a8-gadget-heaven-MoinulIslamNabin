@@ -1,0 +1,70 @@
+[
+    {
+        "id": "MB0033",
+        "title": "MacBook Air M1",
+        "img": "https://i.ibb.co.com/ym9ZQHH/images.jpg",
+        "category": "MacBooks",
+        "price": 1199,
+        "description": "Apple MacBook Air with M1 chip for incredible performance.",
+        "specs": [
+            "13.3-inch Retina Display",
+            "Apple M1 Chip",
+            "8GB RAM",
+            "256GB SSD",
+            "Integrated Graphics"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "id": "MB0032",
+        "title": "MacBook Pro 13 M2",
+        "img": "https://i.ibb.co.com/fCPH5D2/images.jpg",
+        "category": "MacBooks",
+        "price": 1299,
+        "description": "Compact MacBook Pro with the latest M2 chip, delivering great performance in a portable design.",
+        "specs": [
+            "13.3-inch Retina Display",
+            "Apple M2 Chip",
+            "8GB RAM",
+            "256GB SSD",
+            "Touch Bar and Touch ID"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "id": "MB0033",
+        "title": "MacBook Pro 14 M1 Pro",
+        "img": "https://i.ibb.co.com/4NzYXhj/Mac-Book-M1-Pro-14-8-Core-Silverr.webp",
+        "category": "MacBooks",
+        "price": 1999,
+        "description": "MacBook Pro 14 with the powerful M1 Pro chip, great for professional-grade tasks and creative workflows.",
+        "specs": [
+            "14.2-inch Liquid Retina XDR Display",
+            "Apple M1 Pro Chip",
+            "16GB RAM",
+            "512GB SSD",
+            "Up to 17 hours of battery life"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "id": "MB0034",
+        "title": "MacBook Pro 16 M1 Max",
+        "img": "https://i.ibb.co.com/Mg8VYbQ/mbp14-space-gray-Custom-Mac-BD-aaeb9304-d2be-417b-9772-2ee500510216.webp",
+        "category": "MacBooks",
+        "price": 3499,
+        "description": "Top-tier MacBook Pro with M1 Max chip, ideal for intensive tasks like 3D rendering and video editing.",
+        "specs": [
+            "16.2-inch Liquid Retina XDR Display",
+            "Apple M1 Max Chip",
+            "32GB RAM",
+            "1TB SSD",
+            "Up to 21 hours of battery life"
+        ],
+        "availability": true,
+        "rating": 5.0
+    }
+]

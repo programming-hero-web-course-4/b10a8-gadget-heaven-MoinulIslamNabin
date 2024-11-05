@@ -1,0 +1,68 @@
+[
+    {
+        "id": "A0021",
+        "title": "JBL Wireless Earbuds",
+        "img": "https://i.ibb.co.com/2sMwLkc/64cbe8eefef57507687a179a-jbl-tune-125-true-wireless-headphones.jpg",
+        "category": "Accessories",
+        "price": 150,
+        "description": "JBL wireless earbuds with noise-cancellation and high-quality sound.",
+        "specs": [
+            "Bluetooth 5.0",
+            "Active Noise Cancellation",
+            "Up to 20 Hours Battery Life",
+            "IPX5 Water Resistant"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "id": "A0022",
+        "title": "Logitech MX Master 3 Mouse",
+        "img": "https://i.ibb.co.com/0BRVkWm/Logitech-MX-Master-3-review-04.jpg",
+        "category": "Accessories",
+        "price": 99,
+        "description": "Logitech MX Master 3 advanced wireless mouse with customizable buttons.",
+        "specs": [
+            "Wireless",
+            "USB-C Charging",
+            "4000 DPI Sensor",
+            "Customizable Buttons"
+        ],
+        "availability": false,
+        "rating": 4.7
+    },
+    {
+        "id": "A0027",
+        "title": "Bose SoundLink Revolve+",
+        "img": "https://i.ibb.co.com/PG2N5v2/Sound-Link-Revolve-Plus-II-Silver-Ecom-2.webp",
+        "category": "Accessories",
+        "price": 329,
+        "description": "Portable 360° Bluetooth speaker with deep, loud, immersive sound and flexible handle for easy carrying.",
+        "specs": [
+            "360° sound coverage",
+            "16-hour battery life",
+            "IPX4 water resistance",
+            "Bluetooth and AUX input",
+            "Built-in microphone for calls"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "id": "A0028",
+        "title": "Apple AirPods Pro (2nd Generation)",
+        "img": "https://i.ibb.co.com/Bg5NC6P/2i-Zu43g-Ol-Pb-SISTt-Hz-NCV7-Gx-JW0i-Jraoq-ET4ilfp.webp",
+        "category": "Accessories",
+        "price": 249,
+        "description": "Premium true wireless earphones with active noise cancelation and spatial audio for immersive listening.",
+        "specs": [
+            "Active noise canceling and transparency mode",
+            "Up to 30 hours battery with MagSafe charging case",
+            "Bluetooth 5.3",
+            "Adaptive EQ and spatial audio",
+            "Sweat and water resistant (IPX4)"
+        ],
+        "availability": true,
+        "rating": 4.8
+    }
+]

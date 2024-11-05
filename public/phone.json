@@ -1,0 +1,104 @@
+[
+    {
+        "id": "P015",
+        "title": "Samsung Galaxy A32",
+        "img": "https://i.ibb.co.com/v15D2Ld/images.jpg",
+        "category": "Phones",
+        "price": 279,
+        "description": "Samsung Galaxy A32 with a vibrant 6.4-inch Super AMOLED display.",
+        "specs": [
+            "6.4-inch Display",
+            "4GB RAM",
+            "128GB Storage",
+            "5000mAh Battery",
+            "Quad Rear Camera"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "id": "P016",
+        "title": "OnePlus Nord N200",
+        "img": "https://i.ibb.co.com/hYBfPtk/N200-Back-Render-1440x1440.png",
+        "category": "Phones",
+        "price": 239,
+        "description": "OnePlus Nord N200 5G offers a smooth 90Hz display and great performance.",
+        "specs": [
+            "6.49-inch Display",
+            "4GB RAM",
+            "64GB Storage",
+            "5000mAh Battery",
+            "Triple Rear Camera"
+        ],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "id": "P017",
+        "title": "Nokia G50",
+        "img": "https://i.ibb.co.com/sgwFwdw/images.jpg",
+        "category": "Phones",
+        "price": 199,
+        "description": "Nokia G50 with 5G capability and long-lasting battery life.",
+        "specs": [
+            "6.82-inch Display",
+            "4GB RAM",
+            "128GB Storage",
+            "5000mAh Battery",
+            "Triple Rear Camera"
+        ],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "id": "P018",
+        "title": "Motorola Moto G Power",
+        "img": "https://i.ibb.co.com/gJYPhjP/Motorola-Moto-G-Power-2021-64-GB-Flash-Gray-Unlocked-cac53b70-a61e-4fa8-a30a-d284944c186f-9058f1ca36.webp",
+        "category": "Phones",
+        "price": 249,
+        "description": "Motorola Moto G Power features a stunning display and exceptional battery life.",
+        "specs": [
+            "6.6-inch Display",
+            "4GB RAM",
+            "64GB Storage",
+            "5000mAh Battery",
+            "Triple Rear Camera"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "id": "P019",
+        "title": "Xiaomi Redmi Note 10",
+        "img": "https://i.ibb.co.com/b5kxxnx/2090-78694.jpg",
+        "category": "Phones",
+        "price": 199,
+        "description": "Xiaomi Redmi Note 10 with a beautiful AMOLED display and powerful performance.",
+        "specs": [
+            "6.43-inch Display",
+            "4GB RAM",
+            "64GB Storage",
+            "5000mAh Battery",
+            "Quad Rear Camera"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "id": "P020",
+        "title": "Realme 8 Pro",
+        "img": "https://i.ibb.co.com/61dNh1N/images.jpg",
+        "category": "Phones",
+        "price": 299,
+        "description": "Realme 8 Pro features a stunning 108MP camera and fast charging.",
+        "specs": [
+            "6.4-inch Display",
+            "8GB RAM",
+            "128GB Storage",
+            "4500mAh Battery",
+            "Quad Rear Camera"
+        ],
+        "availability": true,
+        "rating": 4.5
+    }
+]
