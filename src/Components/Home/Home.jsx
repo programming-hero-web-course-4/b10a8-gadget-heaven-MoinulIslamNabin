@@ -109,8 +109,8 @@ const Home = () => {
           >
             Iphones
           </button>
-          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded p-1">
-            <span class="flex w-full bg-gray-900 text-white rounded p-2">
+          <button class="bg-gradient-to-b from-[#9538E2] from-[90%] to-orange-400 text-white font-semibold rounded-full w-10/12 p-1">
+            <span class="flex justify-center w-full bg-slate-100 text-[#9538E2] rounded-full p-2">
               Gradient border
             </span>
           </button>

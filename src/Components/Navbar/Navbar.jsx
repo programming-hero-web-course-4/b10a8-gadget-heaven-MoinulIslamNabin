@@ -541,7 +541,7 @@ const Navbar = () => {
       </div>
     );
   }  else {
-    document.title = "Terms & Conditions";
+    
     return (
       <div className="container mx-auto mt-8 lg:px-12 px-0">
         <div className="navbar mb-4 pt-4">
