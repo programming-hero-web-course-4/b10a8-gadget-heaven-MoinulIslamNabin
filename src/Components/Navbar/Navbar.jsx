@@ -1,6 +1,6 @@
 import Banner from "../Banner/Banner";
 import "./Navbar.css";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
@@ -103,6 +103,7 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="navbar-end gap-4">
+            <Link to={"/DashBoard"}>  
             <button className="btn btn-ghost bg-white btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -119,6 +120,8 @@ const Navbar = () => {
                 />
               </svg>
             </button>
+            </Link>
+            <Link to={"/DashBoard"}>  
             <button className="btn btn-ghost bg-white btn-circle">
               <div className="indicator">
                 <svg
@@ -135,9 +138,11 @@ const Navbar = () => {
                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   />
                 </svg>
-                <span className="badge badge-xs badge-primary indicator-item bg-red-500"></span>
+                
               </div>
             </button>
+            </Link>
+            
           </div>
         </div>
         <Banner></Banner>
@@ -237,7 +242,8 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="navbar-end gap-4">
-            <button className="btn btn-ghost bg-white outline outline-1 outline-black/20 btn-circle">
+          <Link to={"/DashBoard"}>  
+            <button className="btn btn-ghost border border-black/10 bg-white btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -253,7 +259,9 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-            <button className="btn btn-ghost bg-white outline outline-1 outline-black/20 btn-circle">
+            </Link>
+            <Link to={"/DashBoard"}>  
+            <button className="btn btn-ghost border-black/10 bg-white btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -269,9 +277,10 @@ const Navbar = () => {
                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   />
                 </svg>
-                <span className="badge badge-xs badge-primary indicator-item bg-red-500"></span>
+                
               </div>
             </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -369,7 +378,8 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="navbar-end gap-4">
-            <button className="btn btn-ghost bg-white outline outline-1 outline-black/20 btn-circle">
+          <Link to={"/DashBoard"}>  
+            <button className="btn btn-ghost border border-black/10 bg-white btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -385,7 +395,9 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-            <button className="btn btn-ghost bg-white outline outline-1 outline-black/20 btn-circle">
+            </Link>
+            <Link to={"/DashBoard"}>  
+            <button className="btn btn-ghost border-black/10 bg-white btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -401,9 +413,10 @@ const Navbar = () => {
                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   />
                 </svg>
-                <span className="badge badge-xs badge-primary indicator-item bg-red-500"></span>
+                
               </div>
             </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -501,7 +514,8 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="navbar-end gap-4">
-            <button className="btn btn-ghost bg-white outline outline-1 outline-black/20 btn-circle">
+          <Link to={"/DashBoard"}>  
+            <button className="btn btn-ghost border border-black/10 bg-white btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -517,7 +531,9 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-            <button className="btn btn-ghost bg-white outline outline-1 outline-black/20 btn-circle">
+            </Link>
+            <Link to={"/DashBoard"}>  
+            <button className="btn btn-ghost border-black/10 bg-white btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -533,9 +549,10 @@ const Navbar = () => {
                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   />
                 </svg>
-                <span className="badge badge-xs badge-primary indicator-item bg-red-500"></span>
+                
               </div>
             </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -633,7 +650,8 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="navbar-end gap-4">
-            <button className="btn btn-ghost bg-white outline outline-1 outline-black/20 btn-circle">
+          <Link to={"/DashBoard"}>  
+            <button className="btn btn-ghost border border-black/10 bg-white btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -649,7 +667,9 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-            <button className="btn btn-ghost bg-white outline outline-1 outline-black/20 btn-circle">
+            </Link>
+            <Link to={"/DashBoard"}>  
+            <button className="btn btn-ghost border-black/10 bg-white btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -665,9 +685,10 @@ const Navbar = () => {
                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   />
                 </svg>
-                <span className="badge badge-xs badge-primary indicator-item bg-red-500"></span>
+                
               </div>
             </button>
+            </Link>
           </div>
         </div>
       </div>
