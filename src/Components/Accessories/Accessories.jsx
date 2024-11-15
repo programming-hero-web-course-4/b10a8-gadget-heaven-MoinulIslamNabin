@@ -14,13 +14,8 @@ const Accessories = () => {
   }, []);
   return (
     <>
-      {Array.isArray(accessoriesCard) && accessoriesCard.map((card) =>
-        navigation.state === "loading" ? (
-          <Skeleton key={card.id}></Skeleton>
-        ) : (
-          <Card key={card.id} card={card}></Card>
-        )
-      )}
+      {Array.isArray(accessoriesCard) &&
+        accessoriesCard.map((card) => <Card key={card.id} card={card}></Card>)}
     </>
   );
 };

@@ -1,202 +1,437 @@
 [
     {
-        "id": "P001",
-        "title": "Samsung Galaxy S21",
-        "img": "https://i.ibb.co.com/xMWygFM/Samsung-Galaxy-S21-FE-5-G-image1-600x508.webp",
-        "category": "Phones",
-        "price": 799,
-        "description": "The Samsung Galaxy S21 with a stunning 6.2-inch Dynamic AMOLED display.",
-        "specs": [
-            "6.2-inch Display",
-            "8GB RAM",
-            "128GB Storage",
-            "4000mAh Battery",
-            "Triple Rear Camera"
-        ],
-        "availability": true,
-        "rating": 4.5
+      "id": "A0021",
+      "title": "JBL Wireless Earbuds",
+      "img": "https://i.ibb.co.com/2sMwLkc/64cbe8eefef57507687a179a-jbl-tune-125-true-wireless-headphones.jpg",
+      "category": "Accessories",
+      "price": 150,
+      "description": "JBL wireless earbuds with noise-cancellation and high-quality sound.",
+      "specs": [
+        "Bluetooth 5.0",
+        "Active Noise Cancellation",
+        "Up to 20 Hours Battery Life",
+        "IPX5 Water Resistant"
+      ],
+      "availability": true,
+      "rating": 4.6
     },
     {
-        "id": "P002",
-        "title": "iPhone 12",
-        "img": "https://i.ibb.co.com/p334k5K/1533-48820.jpg",
-        "category": "Phones",
-        "price": 699,
-        "description": "Apple iPhone 12 with a 6.1-inch Super Retina XDR display.",
-        "specs": [
-            "6.1-inch Display",
-            "4GB RAM",
-            "64GB Storage",
-            "2815mAh Battery",
-            "Dual Rear Camera"
-        ],
-        "availability": true,
-        "rating": 4.7
+      "id": "A0022",
+      "title": "Logitech MX Master 3 Mouse",
+      "img": "https://i.ibb.co.com/0BRVkWm/Logitech-MX-Master-3-review-04.jpg",
+      "category": "Accessories",
+      "price": 99,
+      "description": "Logitech MX Master 3 advanced wireless mouse with customizable buttons.",
+      "specs": [
+        "Wireless",
+        "USB-C Charging",
+        "4000 DPI Sensor",
+        "Customizable Buttons"
+      ],
+      "availability": false,
+      "rating": 4.7
     },
     {
-        "id": "P003",
-        "title": "Google Pixel 5",
-        "img": "https://i.ibb.co.com/V3TwYBr/Google-Pixel-5.jpg",
-        "category": "Phones",
-        "price": 699,
-        "description": "Google Pixel 5 with an excellent camera and stock Android experience.",
-        "specs": [
-            "6.0-inch Display",
-            "8GB RAM",
-            "128GB Storage",
-            "4080mAh Battery",
-            "Dual Rear Camera"
-        ],
-        "availability": true,
-        "rating": 4.6
+      "id": "A0027",
+      "title": "Bose SoundLink Revolve+",
+      "img": "https://i.ibb.co.com/PG2N5v2/Sound-Link-Revolve-Plus-II-Silver-Ecom-2.webp",
+      "category": "Accessories",
+      "price": 329,
+      "description": "Portable 360° Bluetooth speaker with deep, loud, immersive sound and flexible handle for easy carrying.",
+      "specs": [
+        "360° sound coverage",
+        "16-hour battery life",
+        "IPX4 water resistance",
+        "Bluetooth and AUX input",
+        "Built-in microphone for calls"
+      ],
+      "availability": true,
+      "rating": 4.7
     },
     {
-        "id": "P004",
-        "title": "OnePlus 9",
-        "img": "https://i.ibb.co.com/xh611jw/71d-C5te3-Fa-S.jpg",
-        "category": "Phones",
-        "price": 729,
-        "description": "OnePlus 9 with Hasselblad camera and 120Hz display.",
-        "specs": [
-            "6.55-inch Display",
-            "8GB RAM",
-            "128GB Storage",
-            "4500mAh Battery",
-            "Triple Rear Camera"
-        ],
-        "availability": true,
-        "rating": 4.5
+      "id": "A0028",
+      "title": "Apple AirPods Pro (2nd Generation)",
+      "img": "https://i.ibb.co.com/Bg5NC6P/2i-Zu43g-Ol-Pb-SISTt-Hz-NCV7-Gx-JW0i-Jraoq-ET4ilfp.webp",
+      "category": "Accessories",
+      "price": 249,
+      "description": "Premium true wireless earphones with active noise cancelation and spatial audio for immersive listening.",
+      "specs": [
+        "Active noise canceling and transparency mode",
+        "Up to 30 hours battery with MagSafe charging case",
+        "Bluetooth 5.3",
+        "Adaptive EQ and spatial audio",
+        "Sweat and water resistant (IPX4)"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+  
+    {
+      "id": "IP0031",
+      "title": "iPhone 12",
+      "img": "https://i.ibb.co.com/p334k5K/1533-48820.jpg",
+      "category": "Iphones",
+      "price": 699,
+      "description": "Apple iPhone 12 with a 6.1-inch Super Retina XDR display.",
+      "specs": [
+        "6.1-inch Display",
+        "4GB RAM",
+        "64GB Storage",
+        "2815mAh Battery",
+        "Dual Rear Camera"
+      ],
+      "availability": true,
+      "rating": 4.7
     },
     {
-        "id": "L001",
-        "title": "Dell XPS 13",
-        "img": "https://i.ibb.co.com/mJrWLGd/Dell-XPS-13-9300-Intel-Core-i7-1065-G7-1-3-GHz-Win-10-Pro-Iris-Plus-Graphics-16-GB-RAM-512-SSD-NVMe.webp",
-        "category": "Laptops",
-        "price": 999,
-        "description": "Dell XPS 13 laptop with a powerful Intel i7 processor and ultra-thin design.",
-        "specs": [
-            "13.3-inch FHD Display",
-            "Intel i7 Processor",
-            "16GB RAM",
-            "512GB SSD",
-            "Integrated Graphics"
-        ],
-        "availability": true,
-        "rating": 4.8
+      "id": "IP0032",
+      "title": "iPhone 13",
+      "img": "https://i.ibb.co.com/yR7vDDJ/images.jpg",
+      "category": "Iphones",
+      "price": 799,
+      "description": "iPhone 13 with improved battery life and camera performance, designed for everyday use.",
+      "specs": [
+        "6.1-inch Super Retina XDR Display",
+        "A15 Bionic Chip",
+        "Dual 12MP Camera System",
+        "Up to 19 hours of video playback",
+        "128GB Storage"
+      ],
+      "availability": true,
+      "rating": 4.8
     },
     {
-        "id": "L002",
-        "title": "MacBook Air M1",
-        "img": "https://i.ibb.co.com/ym9ZQHH/images.jpg",
-        "category": "MacBooks",
-        "price": 1199,
-        "description": "Apple MacBook Air with M1 chip for incredible performance.",
-        "specs": [
-            "13.3-inch Retina Display",
-            "Apple M1 Chip",
-            "8GB RAM",
-            "256GB SSD",
-            "Integrated Graphics"
-        ],
-        "availability": true,
-        "rating": 4.9
+      "id": "IP0033",
+      "title": "iPhone 13 Pro",
+      "img": "https://i.ibb.co.com/3zXYVQf/Total-by-Verizon-Apple-i-Phone-13-Pro-Max-128-GB-Gold-Prepaid-Smartphone-Locked-to-Total-by-Verizon.webp",
+      "category": "Iphones",
+      "price": 999,
+      "description": "Apple iPhone 13 Pro with ProMotion technology and A15 Bionic chip.",
+      "specs": [
+        "6.1-inch Display",
+        "A15 Bionic Chip",
+        "128GB Storage",
+        "5G Compatible",
+        "Triple Rear Camera"
+      ],
+      "availability": true,
+      "rating": 4.9
     },
     {
-        "id": "L003",
-        "title": "HP Spectre x360",
-        "img": "https://i.ibb.co.com/RNbMFDD/Hp-Spectre-x360-Convertible-13-aw2000-Core-i5-11th-Gen-Laptop-1.jpg",
-        "category": "Laptops",
-        "price": 1299,
-        "description": "HP Spectre x360 with flexible design and powerful performance.",
-        "specs": [
-            "13.3-inch FHD Touch Display",
-            "Intel i7 Processor",
-            "16GB RAM",
-            "1TB SSD",
-            "Integrated Graphics"
-        ],
-        "availability": true,
-        "rating": 4.7
+      "id": "IP0034",
+      "title": "iPhone 13 Pro Max",
+      "img": "https://i.ibb.co.com/LxpBR1B/Apple-i-Phone-13-Pro-Max-256-GB-Sierra-Blue-LTE-Cellular-MLEQ3-LL-A-1a8217bb-9dab-4eeb-8aae-9b8ded70.webp",
+      "category": "Iphones",
+      "price": 1099,
+      "description": "Largest model in the iPhone 13 lineup with ProMotion and exceptional battery life.",
+      "specs": [
+        "6.7-inch Super Retina XDR Display with ProMotion",
+        "A15 Bionic Chip",
+        "Triple 12MP Camera System",
+        "Up to 28 hours of video playback",
+        "256GB Storage"
+      ],
+      "availability": true,
+      "rating": 5.0
     },
     {
-        "id": "A001",
-        "title": "JBL Wireless Earbuds",
-        "img": "https://i.ibb.co.com/2sMwLkc/64cbe8eefef57507687a179a-jbl-tune-125-true-wireless-headphones.jpg",
-        "category": "Accessories",
-        "price": 150,
-        "description": "JBL wireless earbuds with noise-cancellation and high-quality sound.",
-        "specs": [
-            "Bluetooth 5.0",
-            "Active Noise Cancellation",
-            "Up to 20 Hours Battery Life",
-            "IPX5 Water Resistant"
-        ],
-        "availability": true,
-        "rating": 4.6
+      "id": "L0021",
+      "title": "Dell XPS 13",
+      "img": "https://i.ibb.co.com/pf4zMjS/images.jpg",
+      "category": "Laptops",
+      "price": 999,
+      "description": "Dell XPS 13 laptop with a powerful Intel i7 processor and ultra-thin design.",
+      "specs": [
+        "13.3-inch FHD Display",
+        "Intel i7 Processor",
+        "16GB RAM",
+        "512GB SSD",
+        "Integrated Graphics"
+      ],
+      "availability": true,
+      "rating": 4.8
     },
     {
-        "id": "A002",
-        "title": "Logitech MX Master 3 Mouse",
-        "img": "https://i.ibb.co.com/0BRVkWm/Logitech-MX-Master-3-review-04.jpg",
-        "category": "Accessories",
-        "price": 99,
-        "description": "Logitech MX Master 3 advanced wireless mouse with customizable buttons.",
-        "specs": [
-            "Wireless",
-            "USB-C Charging",
-            "4000 DPI Sensor",
-            "Customizable Buttons"
-        ],
-        "availability": false,
-        "rating": 4.7
+      "id": "L0022",
+      "title": "HP Spectre x360",
+      "img": "https://i.ibb.co.com/RNbMFDD/Hp-Spectre-x360-Convertible-13-aw2000-Core-i5-11th-Gen-Laptop-1.jpg",
+      "category": "Laptops",
+      "price": 1299,
+      "description": "HP Spectre x360 with flexible design and powerful performance.",
+      "specs": [
+        "13.3-inch FHD Touch Display",
+        "Intel i7 Processor",
+        "16GB RAM",
+        "1TB SSD",
+        "Integrated Graphics"
+      ],
+      "availability": true,
+      "rating": 4.7
     },
     {
-        "id": "SW001",
-        "title": "Apple Watch Series 6",
-        "img": "https://i.ibb.co.com/TK4Jz3m/Pre-Owned-Apple-Watch-Series-6-40mm-Wi-Fi-Only-Space-Gray-Smart-Watch-b6acc69b-c6f3-473a-ab73-9ebb98.webp",
-        "category": "Smart Watches",
-        "price": 399,
-        "description": "Apple Watch Series 6 with blood oxygen monitoring and ECG app.",
-        "specs": [
-            "44mm Display",
-            "Blood Oxygen Monitor",
-            "ECG App",
-            "Water Resistant"
-        ],
-        "availability": true,
-        "rating": 4.8
+      "id": "L0023",
+      "title": "Lenovo ThinkPad X1 Carbon",
+      "img": "https://i.ibb.co.com/hfcjZHZ/Lenovo-Think-Pad-X1-Custom-Mac-BD-1200x1200.webp",
+      "category": "Laptops",
+      "price": 1399,
+      "description": "Lenovo ThinkPad X1 Carbon, known for durability and professional performance.",
+      "specs": [
+        "14-inch UHD Display",
+        "Intel i7 Processor",
+        "16GB RAM",
+        "1TB SSD",
+        "Integrated Graphics"
+      ],
+      "availability": true,
+      "rating": 4.9
     },
     {
-        "id": "SW002",
-        "title": "Samsung Galaxy Watch 3",
-        "img": "https://i.ibb.co.com/bmG0wg1/images.jpg",
-        "category": "Smart Watches",
-        "price": 349,
-        "description": "Samsung Galaxy Watch 3 with advanced health tracking features.",
-        "specs": [
-            "41mm Display",
-            "Heart Rate Monitor",
-            "Sleep Tracking",
-            "GPS"
-        ],
-        "availability": true,
-        "rating": 4.6
+      "id": "L0024",
+      "title": "ASUS ROG Zephyrus G14",
+      "img": "https://i.ibb.co.com/tCw1QGC/images.jpg",
+      "category": "Laptops",
+      "price": 1499,
+      "description": "ASUS ROG Zephyrus G14 with powerful graphics for gaming enthusiasts.",
+      "specs": [
+        "14-inch QHD Display",
+        "AMD Ryzen 9 Processor",
+        "16GB RAM",
+        "1TB SSD",
+        "NVIDIA GeForce RTX 3060"
+      ],
+      "availability": true,
+      "rating": 4.8
     },
     {
-        "id": "IP001",
-        "title": "iPhone 13 Pro",
-        "img": "https://i.ibb.co.com/3zXYVQf/Total-by-Verizon-Apple-i-Phone-13-Pro-Max-128-GB-Gold-Prepaid-Smartphone-Locked-to-Total-by-Verizon.webp",
-        "category": "iPhone",
-        "price": 999,
-        "description": "Apple iPhone 13 Pro with ProMotion technology and A15 Bionic chip.",
-        "specs": [
-            "6.1-inch Display",
-            "A15 Bionic Chip",
-            "128GB Storage",
-            "5G Compatible",
-            "Triple Rear Camera"
-        ],
-        "availability": true,
-        "rating": 4.9
+      "id": "MB0031",
+      "title": "MacBook Air M1",
+      "img": "https://i.ibb.co.com/ym9ZQHH/images.jpg",
+      "category": "MacBooks",
+      "price": 1199,
+      "description": "Apple MacBook Air with M1 chip for incredible performance.",
+      "specs": [
+        "13.3-inch Retina Display",
+        "Apple M1 Chip",
+        "8GB RAM",
+        "256GB SSD",
+        "Integrated Graphics"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "id": "MB0032",
+      "title": "MacBook Pro 13 M2",
+      "img": "https://i.ibb.co.com/fCPH5D2/images.jpg",
+      "category": "MacBooks",
+      "price": 1299,
+      "description": "Compact MacBook Pro with the latest M2 chip, delivering great performance in a portable design.",
+      "specs": [
+        "13.3-inch Retina Display",
+        "Apple M2 Chip",
+        "8GB RAM",
+        "256GB SSD",
+        "Touch Bar and Touch ID"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "id": "MB0033",
+      "title": "MacBook Pro 14 M1 Pro",
+      "img": "https://i.ibb.co.com/4NzYXhj/Mac-Book-M1-Pro-14-8-Core-Silverr.webp",
+      "category": "MacBooks",
+      "price": 1999,
+      "description": "MacBook Pro 14 with the powerful M1 Pro chip, great for professional-grade tasks and creative workflows.",
+      "specs": [
+        "14.2-inch Liquid Retina XDR Display",
+        "Apple M1 Pro Chip",
+        "16GB RAM",
+        "512GB SSD",
+        "Up to 17 hours of battery life"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "id": "MB0034",
+      "title": "MacBook Pro 16 M1 Max",
+      "img": "https://i.ibb.co.com/W6ybwMc/3715-72291.jpg",
+      "category": "MacBooks",
+      "price": 3499,
+      "description": "Top-tier MacBook Pro with M1 Max chip, ideal for intensive tasks like 3D rendering and video editing.",
+      "specs": [
+        "16.2-inch Liquid Retina XDR Display",
+        "Apple M1 Max Chip",
+        "32GB RAM",
+        "1TB SSD",
+        "Up to 21 hours of battery life"
+      ],
+      "availability": true,
+      "rating": 5.0
+    },
+    {
+      "id": "P015",
+      "title": "Samsung Galaxy A32",
+      "img": "https://i.ibb.co.com/v15D2Ld/images.jpg",
+      "category": "Phones",
+      "price": 279,
+      "description": "Samsung Galaxy A32 with a vibrant 6.4-inch Super AMOLED display.",
+      "specs": [
+        "6.4-inch Display",
+        "4GB RAM",
+        "128GB Storage",
+        "5000mAh Battery",
+        "Quad Rear Camera"
+      ],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "id": "P016",
+      "title": "OnePlus Nord N200",
+      "img": "https://i.ibb.co.com/hYBfPtk/N200-Back-Render-1440x1440.png",
+      "category": "Phones",
+      "price": 239,
+      "description": "OnePlus Nord N200 5G offers a smooth 90Hz display and great performance.",
+      "specs": [
+        "6.49-inch Display",
+        "4GB RAM",
+        "64GB Storage",
+        "5000mAh Battery",
+        "Triple Rear Camera"
+      ],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "id": "P017",
+      "title": "Nokia G50",
+      "img": "https://i.ibb.co.com/sgwFwdw/images.jpg",
+      "category": "Phones",
+      "price": 199,
+      "description": "Nokia G50 with 5G capability and long-lasting battery life.",
+      "specs": [
+        "6.82-inch Display",
+        "4GB RAM",
+        "128GB Storage",
+        "5000mAh Battery",
+        "Triple Rear Camera"
+      ],
+      "availability": true,
+      "rating": 4.2
+    },
+    {
+      "id": "P018",
+      "title": "Motorola Moto G Power",
+      "img": "https://i.ibb.co.com/gJYPhjP/Motorola-Moto-G-Power-2021-64-GB-Flash-Gray-Unlocked-cac53b70-a61e-4fa8-a30a-d284944c186f-9058f1ca36.webp",
+      "category": "Phones",
+      "price": 249,
+      "description": "Motorola Moto G Power features a stunning display and exceptional battery life.",
+      "specs": [
+        "6.6-inch Display",
+        "4GB RAM",
+        "64GB Storage",
+        "5000mAh Battery",
+        "Triple Rear Camera"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "id": "P019",
+      "title": "Xiaomi Redmi Note 10",
+      "img": "https://i.ibb.co.com/b5kxxnx/2090-78694.jpg",
+      "category": "Phones",
+      "price": 199,
+      "description": "Xiaomi Redmi Note 10 with a beautiful AMOLED display and powerful performance.",
+      "specs": [
+        "6.43-inch Display",
+        "4GB RAM",
+        "64GB Storage",
+        "5000mAh Battery",
+        "Quad Rear Camera"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "id": "P020",
+      "title": "Realme 8 Pro",
+      "img": "https://i.ibb.co.com/61dNh1N/images.jpg",
+      "category": "Phones",
+      "price": 299,
+      "description": "Realme 8 Pro features a stunning 108MP camera and fast charging.",
+      "specs": [
+        "6.4-inch Display",
+        "8GB RAM",
+        "128GB Storage",
+        "4500mAh Battery",
+        "Quad Rear Camera"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "id": "SW0031",
+      "title": "Samsung Galaxy Watch 5",
+      "img": "https://i.ibb.co.com/jZ8bD33/Galaxy-Watch5-44mm-Graphite.webp",
+      "category": "Smart Watches",
+      "price": 299,
+      "description": "Feature-packed smartwatch with health monitoring and a sleek design, optimized for Android devices.",
+      "specs": [
+        "1.4-inch Super AMOLED Display",
+        "Heart rate and ECG monitoring",
+        "Bluetooth 5.2 connectivity",
+        "GPS and activity tracking",
+        "Up to 40-hour battery life"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "id": "SW0032",
+      "title": "Garmin Forerunner 955",
+      "img": "https://i.ibb.co.com/8gWRRrv/GMIN00284-01.jpg",
+      "category": "Smart Watches",
+      "price": 499,
+      "description": "Advanced GPS smartwatch designed for athletes, offering performance metrics and long battery life.",
+      "specs": [
+        "1.3-inch sunlight-visible display",
+        "Multi-band GPS",
+        "Advanced training metrics",
+        "Up to 15 days battery life in smartwatch mode",
+        "Heart rate and SpO2 monitoring"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "id": "SW0033",
+      "title": "Apple Watch Series 6",
+      "img": "https://i.ibb.co.com/TK4Jz3m/Pre-Owned-Apple-Watch-Series-6-40mm-Wi-Fi-Only-Space-Gray-Smart-Watch-b6acc69b-c6f3-473a-ab73-9ebb98.webp",
+      "category": "Smart Watches",
+      "price": 399,
+      "description": "Apple Watch Series 6 with blood oxygen monitoring and ECG app.",
+      "specs": [
+        "44mm Display",
+        "Blood Oxygen Monitor",
+        "ECG App",
+        "Water Resistant"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "id": "SW0034",
+      "title": "Samsung Galaxy Watch 3",
+      "img": "https://i.ibb.co.com/bmG0wg1/images.jpg",
+      "category": "Smart Watches",
+      "price": 349,
+      "description": "Samsung Galaxy Watch 3 with advanced health tracking features.",
+      "specs": ["41mm Display", "Heart Rate Monitor", "Sleep Tracking", "GPS"],
+      "availability": true,
+      "rating": 4.6
     }
-]
+  ]
+  

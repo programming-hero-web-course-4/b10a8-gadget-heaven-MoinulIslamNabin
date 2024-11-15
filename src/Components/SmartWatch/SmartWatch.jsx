@@ -16,13 +16,7 @@ const SmartWatch = () => {
   return (
     <>
       {Array.isArray(smartWatchCard) &&
-        smartWatchCard.map((card) =>
-          navigation.state === "loading" ? (
-            <Skeleton key={card.id}></Skeleton>
-          ) : (
-            <Card key={card.id} card={card}></Card>
-          )
-        )}
+        smartWatchCard.map((card) => <Card key={card.id} card={card}></Card>)}
     </>
   );
 };

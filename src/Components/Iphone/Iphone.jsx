@@ -15,13 +15,7 @@ const Iphone = () => {
   return (
     <>
       {Array.isArray(iphoneCard) &&
-        iphoneCard.map((card) =>
-          navigation.state === "loading" ? (
-            <Skeleton key={card.id}></Skeleton>
-          ) : (
-            <Card key={card.id} card={card}></Card>
-          )
-        )}
+        iphoneCard.map((card) => <Card key={card.id} card={card}></Card>)}
     </>
   );
 };

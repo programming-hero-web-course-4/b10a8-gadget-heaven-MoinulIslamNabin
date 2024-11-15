@@ -34,40 +34,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/Details/:DetailsId",
-        loader: async ({ params }) => {
+        loader: ({ params }) => {
           const { DetailsId } = params;
-          const [
-            allData,
-            phoneData,
-            accessories,
-            iphone,
-            laptop,
-            macBook,
-            smartWatches,
-          ] = await Promise.all([
-            fetch("./allData.json").then((res) => res.json()),
-            fetch("./phone.json").then((res) => res.json()),
-            fetch("./accessories.json").then((res) => res.json()),
-            fetch("./iphone.json").then((res) => res.json()),
-            fetch("./laptop.json").then((res) => res.json()),
-            fetch("./macBook.json").then((res) => res.json()),
-            fetch("./smartWatches.json").then((res) => res.json()),
-          ]);
-
+      
           
-          const combinedData = [
-            ...allData,
-            ...phoneData,
-            ...accessories,
-            ...iphone,
-            ...laptop,
-            ...macBook,
-            ...smartWatches,
-          ];
-          const selectedItem = combinedData.find(
-            (item) => item.id === DetailsId
-          );
-          return selectedItem;
+          return fetch("./allData.json")
+            .then((res) => res.json())
+            .then((allData) => allData.find((item) => item.id === DetailsId));
+          
         },
         element: <Details></Details>,
       },

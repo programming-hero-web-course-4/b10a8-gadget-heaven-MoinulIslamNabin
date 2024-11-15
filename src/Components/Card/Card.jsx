@@ -27,7 +27,7 @@ const Card = ({ card }) => {
               className="btn rounded-full btn-outline text-[#9538E2] font-bold border-[#9538E2]"
               onClick={() => {
                 document.title = "Details"; 
-                window.scrollTo({ top: 0, behavior: "smooth" }); 
+                window.scrollTo({ top: 300, behavior: "smooth" }); 
               }}
             >
               View Details

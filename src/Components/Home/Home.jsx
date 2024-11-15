@@ -23,7 +23,7 @@ const Home = () => {
       .then((data) => setAllCard(data));
   }, []);
 
-  console.log(allCard);
+  
 
   return (
     <div className="container mx-auto px-14">
@@ -109,11 +109,7 @@ const Home = () => {
           >
             Iphones
           </button>
-          <button class="bg-gradient-to-b from-[#9538E2] from-[90%] to-orange-400 text-white font-semibold rounded-full w-10/12 p-1">
-            <span class="flex justify-center w-full bg-slate-100 text-[#9538E2] rounded-full p-2">
-              Gradient border
-            </span>
-          </button>
+          
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 w-full lg:w-3/4">
           {isActive == "all" && <AllProduct></AllProduct>}

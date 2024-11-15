@@ -16,13 +16,7 @@ const MacBook = () => {
   return (
     <>
       {Array.isArray(macBookCard) &&
-        macBookCard.map((card) =>
-          navigation.state === "loading" ? (
-            <Skeleton key={card.id}></Skeleton>
-          ) : (
-            <Card key={card.id} card={card}></Card>
-          )
-        )}
+        macBookCard.map((card) => <Card key={card.id} card={card}></Card>)}
     </>
   );
 };

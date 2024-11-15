@@ -1,9 +1,9 @@
 [
     {
-        "id": "IP0032",
+        "id": "IP0031",
         "title": "iPhone 12",
         "img": "https://i.ibb.co.com/p334k5K/1533-48820.jpg",
-        "category": "Phones",
+        "category": "Iphones",
         "price": 699,
         "description": "Apple iPhone 12 with a 6.1-inch Super Retina XDR display.",
         "specs": [
@@ -34,10 +34,10 @@
         "rating": 4.8
     },
     {
-        "id": "IP0031",
+        "id": "IP0033",
         "title": "iPhone 13 Pro",
         "img": "https://i.ibb.co.com/3zXYVQf/Total-by-Verizon-Apple-i-Phone-13-Pro-Max-128-GB-Gold-Prepaid-Smartphone-Locked-to-Total-by-Verizon.webp",
-        "category": "iPhone",
+        "category": "Iphones",
         "price": 999,
         "description": "Apple iPhone 13 Pro with ProMotion technology and A15 Bionic chip.",
         "specs": [
