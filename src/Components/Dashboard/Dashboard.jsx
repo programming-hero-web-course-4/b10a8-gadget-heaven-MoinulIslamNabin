@@ -6,7 +6,6 @@ import DashWish from "../DashWish/DashWish";
 
 const Dashboard = () => {
   const [isActive, setIsActive] = useState("cart");
-  console.log(isActive);
   return (
     <>
       <div className="bg-[#9538E2] mt-10">

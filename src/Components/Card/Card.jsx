@@ -1,6 +1,11 @@
+
 import { Link } from "react-router-dom";
 
+
 const Card = ({ card }) => {
+
+  
+
   const {
     id,
     title,

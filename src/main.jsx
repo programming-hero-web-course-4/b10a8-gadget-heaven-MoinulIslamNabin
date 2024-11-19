@@ -34,14 +34,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/Details/:DetailsId",
-        loader: ({ params }) => {
+        loader: async ({ params }) => {
           const { DetailsId } = params;
-      
-          
-          return fetch("./allData.json")
-            .then((res) => res.json())
-            .then((allData) => allData.find((item) => item.id === DetailsId));
-          
+
+          const response = await fetch("/allData.json");
+          if (!response.ok) {
+            return { error: "Failed to fetch data from server" };
+          }
+
+          const allData = await response.json();
+          const item = allData.find((data) => data.id == DetailsId);
+
+          if (!item) {
+            return { error: "Item not found" };
+          }
+
+          return item;
         },
         element: <Details></Details>,
       },

@@ -2,12 +2,21 @@ import React, { useState, useEffect, useRef } from "react";
 import { useLoaderData } from "react-router-dom";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
+import { addCart, addWish, getAllWish } from "../../utilities/localStorage";
+
 
 const DetailsHome = () => {
   const ratingRef = useRef(null);
   const [rating, setRating] = useState(0);
+  
+  
 
   useEffect(() => {
+    const wish = getAllWish();
+    const isExist = wish.find(product => product.id == item.id)
+    if (isExist) {
+      setIsWished(true)
+    }
     const handleOutsideClick = (event) => {
       if (!ratingRef.current.contains(event.target)) {
         setRating(0);
@@ -20,9 +29,17 @@ const DetailsHome = () => {
     };
   }, []);
 
-  
-
   const item = useLoaderData();
+
+  const [isWished, setIsWished] = useState(false)
+
+  const handleCart = item => {
+    addCart(item)
+  }
+  const handleWish = item => {
+    addWish(item)
+    setIsWished(true)
+  }
 
   if (!item) {
     return <p>Item not found</p>;
@@ -35,11 +52,7 @@ const DetailsHome = () => {
           <div className="">
             <div className="card bg-white flex-col lg:flex-row items-center p-6">
               <figure className="w-1/2 md:w-1/3">
-                <img
-                  src={item.img}
-                  alt="Shoes"
-                  className="rounded-xl "
-                />
+                <img src={item.img} alt="Shoes" className="rounded-xl " />
               </figure>
               <div className="card-body p-0 items-start justify-center mt-8 lg:mt-0 lg:ml-6 text-start">
                 <h2 className="text-2xl font-semibold text-[#131313]/80">
@@ -49,7 +62,7 @@ const DetailsHome = () => {
                   Price: $ {item.price}
                 </p>
                 <div className="badge bg-green-400/30 text-green-600 font-bold border-2 border-green-600">
-                  {item.availability ? 'In Stock' : 'Out of Stock'}
+                  {item.availability ? "In Stock" : "Out of Stock"}
                 </div>
                 <p className="text-lg font-medium text-[#131313]/50">
                   {item.description}
@@ -78,7 +91,7 @@ const DetailsHome = () => {
                   </div>
                 </div>
                 <div className="flex gap-3">
-                  <button className="btn rounded-full btn-outline text-md text-white font-bold bg-[#9538E2] border-none">
+                  <button onClick={()=>handleCart(item)} className="btn rounded-full btn-outline text-md text-white font-bold bg-[#9538E2] border-none">
                     Add to cart
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +108,7 @@ const DetailsHome = () => {
                       />
                     </svg>
                   </button>
-                  <button className="btn btn-ghost bg-white outline outline-1 outline-black/20 btn-circle">
+                  <button disabled={isWished} onClick={()=> handleWish(item)} className="btn btn-ghost bg-white outline outline-1 outline-black/20 btn-circle">
                     <div className="indicator">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

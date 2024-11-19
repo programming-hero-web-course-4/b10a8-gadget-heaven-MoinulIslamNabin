@@ -14,7 +14,7 @@ const Navbar = () => {
     document.title = "Gadget Heaven"
     return (
       <div className="container w-11/12 lg:w-auto mx-auto bg-[#9538E2] mt-8 outline outline-offset-4 outline-1 outline-[#9538E2]/50 rounded-2xl lg:px-12 px-0">
-        <div className="navbar mb-4 pt-4">
+        <div className="navbar mb-4 md:pt-4">
           <div className="navbar-start">
             <div className="drawer w-auto">
               <input id="my-drawer" type="checkbox" className="drawer-toggle" />

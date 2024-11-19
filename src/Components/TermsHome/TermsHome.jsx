@@ -1,6 +1,7 @@
 
 
 const TermsHome = () => {
+  const date = new Date().getFullYear();
   return (
     <div className="container mx-auto">
       <div className="flex items-center justify-center -translate-y-[3%] md:-translate-y-[5%]">
@@ -9,7 +10,7 @@ const TermsHome = () => {
             <div className="flex flex-col gap-4">
 
               <h1 className="text-3xl text-black/80 font-bold">Terms and Conditions</h1>
-              <h3 className="text-xl text-black/70 font-semibold">Last Updated: [Insert Date]</h3>
+              <h3 className="text-xl text-black/70 font-semibold">Last Updated: {date}</h3>
               <p className="text-base text-black/50 font-normal mb-4">
               Welcome to Gadget Heaven, operated by Gadget Heaven Corp. By accessing or using our website, you agree to comply with and be bound by the following terms and conditions. Please read these terms carefully. If you do not agree to these terms, you should not use our website.
               </p>
