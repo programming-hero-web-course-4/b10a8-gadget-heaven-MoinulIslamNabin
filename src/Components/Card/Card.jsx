@@ -19,7 +19,7 @@ const Card = ({ card }) => {
   } = card;
 
   return (
-    <div className="card bg-white shadow-md">
+    <div className="card bg-white shadow-md hover:scale-105 ease-in-out duration-300">
       <figure className="px-4 pt-4 pb-2">
         <img src={img} alt="Shoes" className="rounded-xl max-h-36" />
       </figure>

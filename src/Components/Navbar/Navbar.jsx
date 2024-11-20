@@ -9,6 +9,7 @@ const Navbar = () => {
   const isStat = location.pathname === "/Statistics";
   const isDash = location.pathname === "/Dashboard";
   const isTerms = location.pathname === "/Terms";
+ 
 
   if (isHome) {
     document.title = "Gadget Heaven"
@@ -103,8 +104,8 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="navbar-end gap-4">
-            <Link to={"/DashBoard"}>  
-            <button className="btn btn-ghost bg-white btn-circle">
+            <Link to={"/Dashboard"}>  
+            <button onClick={document.title = "Dashboard"} className="btn btn-ghost bg-white btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -121,8 +122,8 @@ const Navbar = () => {
               </svg>
             </button>
             </Link>
-            <Link to={"/DashBoard"}>  
-            <button className="btn btn-ghost bg-white btn-circle">
+            <Link to={"/Dashboard"}>  
+            <button onClick={document.title = "Dashboard"} className="btn btn-ghost bg-white btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -242,8 +243,8 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="navbar-end gap-4">
-          <Link to={"/DashBoard"}>  
-            <button className="btn btn-ghost border border-black/10 bg-white btn-circle">
+          <Link to={"/Dashboard"}>  
+            <button onClick={document.title = "Dashboard"} className="btn btn-ghost border border-black/10 bg-white btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -260,8 +261,8 @@ const Navbar = () => {
               </svg>
             </button>
             </Link>
-            <Link to={"/DashBoard"}>  
-            <button className="btn btn-ghost border-black/10 bg-white btn-circle">
+            <Link to={"/Dashboard"}>  
+            <button onClick={document.title = "Dashboard"} className="btn btn-ghost border-black/10 bg-white btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -378,8 +379,8 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="navbar-end gap-4">
-          <Link to={"/DashBoard"}>  
-            <button className="btn btn-ghost border border-black/10 bg-white btn-circle">
+          <Link to={"/Dashboard"}>  
+            <button onClick={document.title = "Dashboard"} className="btn btn-ghost border border-black/10 bg-white btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -396,8 +397,8 @@ const Navbar = () => {
               </svg>
             </button>
             </Link>
-            <Link to={"/DashBoard"}>  
-            <button className="btn btn-ghost border-black/10 bg-white btn-circle">
+            <Link to={"/Dashboard"}>  
+            <button onClick={document.title = "Dashboard"} className="btn btn-ghost border-black/10 bg-white btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -514,8 +515,8 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="navbar-end gap-4">
-          <Link to={"/DashBoard"}>  
-            <button className="btn btn-ghost border border-black/10 bg-white btn-circle">
+          <Link to={"/Dashboard"}>  
+            <button onClick={document.title = "Dashboard"} className="btn btn-ghost border border-black/10 bg-white btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -532,8 +533,8 @@ const Navbar = () => {
               </svg>
             </button>
             </Link>
-            <Link to={"/DashBoard"}>  
-            <button className="btn btn-ghost border-black/10 bg-white btn-circle">
+            <Link to={"/Dashboard"}>  
+            <button onClick={document.title = "Dashboard"} className="btn btn-ghost border-black/10 bg-white btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -650,8 +651,8 @@ const Navbar = () => {
             </nav>
           </div>
           <div className="navbar-end gap-4">
-          <Link to={"/DashBoard"}>  
-            <button className="btn btn-ghost border border-black/10 bg-white btn-circle">
+          <Link to={"/Dashboard"}>  
+            <button onClick={document.title = "Dashboard"} className="btn btn-ghost border border-black/10 bg-white btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -668,8 +669,8 @@ const Navbar = () => {
               </svg>
             </button>
             </Link>
-            <Link to={"/DashBoard"}>  
-            <button className="btn btn-ghost border-black/10 bg-white btn-circle">
+            <Link to={"/Dashboard"}>  
+            <button onClick={document.title = "Dashboard"} className="btn btn-ghost border-black/10 bg-white btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

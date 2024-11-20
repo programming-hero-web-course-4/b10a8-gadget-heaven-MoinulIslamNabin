@@ -22,7 +22,7 @@ const Wishlist = ({ card, handleRemoveWish }) => {
 
   return (
     <div className="mt-4">
-      <div className="card bg-white flex-row items-center border-2 border-[#1313131A] p-6">
+      <div className="card bg-white flex-row items-center border-2 border-[#1313131A] p-6 hover:scale-105 ease-in-out duration-300">
         <figure className="w-1/2 md:w-1/5">
           <img src={img} alt="Shoes" className="rounded-xl max-h-28" />
         </figure>

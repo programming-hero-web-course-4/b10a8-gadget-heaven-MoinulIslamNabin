@@ -7,8 +7,11 @@ import {
   getAllCart,
   removeCart,
 } from "../../utilities/localStorage";
+import { useNavigate } from "react-router-dom";
 
 const DashCart = () => {
+  const navigate = useNavigate()
+
   const [product, setProduct] = useState([]);
   useEffect(() => {
     const cart = getAllCart();
@@ -54,7 +57,7 @@ const DashCart = () => {
   `,
 
         imageUrl: group,
-        imageAlt: "Group Image",
+        imageAlt: "Success Image",
         confirmButtonText: "Close",
         customClass: {
           popup: 'rounded-2xl',  
@@ -67,13 +70,18 @@ const DashCart = () => {
           confirmButton:
             "bg-[#9538E2] px-36 md:px-52 text-white rounded-full font-bold",
         },
+      }).then(() => {
+        navigate("/");  
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });  
+        }, 100);
       });
     } else {
       Swal.fire({
         title: "Cart is Empty",
         text: "Please add items to the cart before purchasing.",
         icon: "warning",
-        confirmButtonText: "Close",
+        confirmButtonText: "Home",
         customClass: {
           popup: 'rounded-2xl',  
           title: "text-2xl text-black font-bold",
@@ -82,12 +90,16 @@ const DashCart = () => {
 
           image: "pt-3",
 
-          confirmButton:
-            "bg-[#9538E2] px-36 md:px-52 text-white rounded-full font-bold",
-        },
-      });
-    }
-  };
+          confirmButton: "bg-[#9538E2] px-36 md:px-52 text-white rounded-full font-bold",
+      },
+    }).then(() => {
+      navigate("/");  
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });  
+      }, 100);
+    });
+  }
+};
 
   const totalCost = product.reduce((previous, updated) => {
     return previous + updated.price;
