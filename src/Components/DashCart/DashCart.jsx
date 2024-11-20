@@ -1,7 +1,12 @@
-import { NavLink } from "react-router-dom";
+import Swal from "sweetalert2";
+import group from "../../assets/Group.png";
 import Cart from "../Cart/Cart";
 import { useEffect, useState } from "react";
-import { getAllCart } from "../../utilities/localStorage";
+import {
+  clearCart,
+  getAllCart,
+  removeCart,
+} from "../../utilities/localStorage";
 
 const DashCart = () => {
   const [product, setProduct] = useState([]);
@@ -23,8 +28,65 @@ const DashCart = () => {
     setSort(!sort);
   };
 
+  const handleRemoveCart = (id) => {
+    removeCart(id);
+    const cart = getAllCart();
+    setProduct(cart);
+  };
+
   const handlePurchase = () => {
-    
+    if (product.length > 0) {
+      clearCart();
+      const cart = getAllCart();
+      setProduct(cart);
+
+      Swal.fire({
+        title: "Payment Successful!",
+        html: `
+    <hr class="w-full border-gray-300 mb-4">
+    <p class="text-base text-black/60 font-semibold">
+      Thank you for your purchase.
+    </p>
+    <br>
+    <p class="text-base text-black/60 font-semibold -mt-2">
+      Total: $${totalCost}
+    </p>
+  `,
+
+        imageUrl: group,
+        imageAlt: "Group Image",
+        confirmButtonText: "Close",
+        customClass: {
+          popup: 'rounded-2xl',  
+          title: "text-2xl text-black font-bold",
+          
+          text: "text-base md:text-md lg:text-lg text-black/60 font-semibold",
+
+          image: "pt-3",
+          actions: 'mt-2',
+          confirmButton:
+            "bg-[#9538E2] px-36 md:px-52 text-white rounded-full font-bold",
+        },
+      });
+    } else {
+      Swal.fire({
+        title: "Cart is Empty",
+        text: "Please add items to the cart before purchasing.",
+        icon: "warning",
+        confirmButtonText: "Close",
+        customClass: {
+          popup: 'rounded-2xl',  
+          title: "text-2xl text-black font-bold",
+
+          text: "text-base md:text-md lg:text-lg text-black/60 font-semibold",
+
+          image: "pt-3",
+
+          confirmButton:
+            "bg-[#9538E2] px-36 md:px-52 text-white rounded-full font-bold",
+        },
+      });
+    }
   };
 
   const totalCost = product.reduce((previous, updated) => {
@@ -48,7 +110,10 @@ const DashCart = () => {
           >
             Sort by Price
           </button>
-          <button onClick={handlePurchase} className="hidden md:block btn rounded-full btn-outline text-white font-extrabold bg-gradient-to-b from-[#9538E2] from-[10%] to-pink-300 border-none hover:from-gray-500 hover:to-gray-900 ease-in-out duration-500">
+          <button
+            onClick={handlePurchase}
+            className="hidden md:block btn rounded-full btn-outline text-white font-extrabold bg-gradient-to-b from-[#9538E2] from-[10%] to-pink-300 border-none hover:from-gray-500 hover:to-gray-900 ease-in-out duration-500"
+          >
             Purchase
           </button>
         </div>
@@ -64,14 +129,23 @@ const DashCart = () => {
         </div>
 
         <div className="navbar-end w-auto gap-4">
-          <button onClick={handlePurchase} className="btn rounded-full btn-outline text-white font-extrabold bg-gradient-to-b from-[#9538E2] from-[10%] to-pink-300 border-none">
+          <button
+            onClick={handlePurchase}
+            className="btn rounded-full btn-outline text-white font-extrabold bg-gradient-to-b from-[#9538E2] from-[10%] to-pink-300 border-none"
+          >
             Purchase
           </button>
         </div>
       </div>
 
       {Array.isArray(product) && product.length !== 0 ? (
-        product.map((card) => <Cart key={card.id} card={card}></Cart>)
+        product.map((card) => (
+          <Cart
+            handleRemoveCart={handleRemoveCart}
+            key={card.id}
+            card={card}
+          ></Cart>
+        ))
       ) : (
         <div className="flex justify-center items-center text-xl font-bold text-gray-500">
           <p>Empty</p>

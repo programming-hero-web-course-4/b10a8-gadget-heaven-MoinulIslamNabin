@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Wishlist from "../Wishlist/Wishlist";
-import { getAllWish } from "../../utilities/localStorage";
+import { getAllWish, removeWish } from "../../utilities/localStorage";
 
 const DashWish = () => {
   const [product, setProduct] = useState([]);
   useEffect(() => {
-    const cart = getAllWish();
-    setProduct(cart);
+    const wish = getAllWish();
+    setProduct(wish);
   }, []);
+
+  const handleRemoveWish = (id) => {
+    removeWish(id)
+    const wish = getAllWish();
+    setProduct(wish);
+  }
 
   return (
     <div className="container mx-auto mt-8 lg:px-12 px-3">
@@ -20,7 +26,7 @@ const DashWish = () => {
       </div>
 
       {Array.isArray(product) && product.length !== 0 ? (
-        product.map((card) => <Wishlist key={card.id} card={card}></Wishlist>)
+        product.map((card) => <Wishlist handleRemoveWish={handleRemoveWish} key={card.id} card={card}></Wishlist>)
       ) : (
         <div className="flex justify-center items-center text-xl font-bold text-gray-500">
           <p>Empty</p>

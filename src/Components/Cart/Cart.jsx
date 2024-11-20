@@ -1,7 +1,8 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import { removeCart } from "../../utilities/localStorage";
 
-const Cart = ({card}) => {
+const Cart = ({card, handleRemoveCart}) => {
 
   const {
     id,
@@ -14,6 +15,8 @@ const Cart = ({card}) => {
     availability,
     rating,
   } = card;
+
+  
 
   return (
     <div className="mt-4">
@@ -29,7 +32,7 @@ const Cart = ({card}) => {
           </p>
         </div>
         <button
-          onClick={() => handleDelete(id)}
+          onClick={() => handleRemoveCart(id)}
           className="btn bg-transparent border-0 rounded-badge shadow-none"
         >
           <img src="https://i.ibb.co.com/9ZvxFyb/delete.png" alt="" />

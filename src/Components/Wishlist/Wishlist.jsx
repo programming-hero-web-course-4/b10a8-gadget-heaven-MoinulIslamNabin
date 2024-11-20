@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import { addCart, getAllWish } from "../../utilities/localStorage";
 import { useEffect, useState } from "react";
 
-const Wishlist = ({ card }) => {
+const Wishlist = ({ card, handleRemoveWish }) => {
   const {
     id,
     title,
@@ -17,8 +17,8 @@ const Wishlist = ({ card }) => {
 
   const handleCart = (card) => {
     addCart(card);
+    handleRemoveWish(id);
   };
-  
 
   return (
     <div className="mt-4">
@@ -53,7 +53,6 @@ const Wishlist = ({ card }) => {
             </svg>
           </button>
         </div>
-        
       </div>
     </div>
   );
