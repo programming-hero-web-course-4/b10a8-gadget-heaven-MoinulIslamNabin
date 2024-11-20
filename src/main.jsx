@@ -9,6 +9,14 @@ import Statistics from "./Components/Statistics/Statistics";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Terms from "./Components/Terms/Terms";
 import Details from "./Components/Details/Details";
+import AllProduct from "./Components/AllProduct/AllProduct";
+import Accessories from "./Components/Accessories/Accessories";
+import Iphone from "./Components/Iphone/Iphone";
+import Laptop from "./Components/Laptop/Laptop";
+import Phone from "./Components/Phone/Phone";
+import SmartWatch from "./Components/SmartWatch/SmartWatch";
+import MacBook from "./Components/MacBook/MacBook";
+
 
 const router = createBrowserRouter([
   {
@@ -19,6 +27,37 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        errorElement: <ErrorPage></ErrorPage>,
+        children: [
+          {
+            path: "/",
+            element: <AllProduct></AllProduct>,
+          },
+          {
+            path: "/Phones",
+            element: <Phone></Phone>,
+          },
+          {
+            path: "/Laptops",
+            element: <Laptop></Laptop>,
+          },
+          {
+            path: "/Accessories",
+            element: <Accessories></Accessories>,
+          },
+          {
+            path: "/SmartWatches",
+            element: <SmartWatch></SmartWatch>,
+          },
+          {
+            path: "/MacBooks",
+            element: <MacBook></MacBook>,
+          },
+          {
+            path: "/Iphones",
+            element: <Iphone></Iphone>,
+          },
+        ],
       },
       {
         path: "/Statistics",

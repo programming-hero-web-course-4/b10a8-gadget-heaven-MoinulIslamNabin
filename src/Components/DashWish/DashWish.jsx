@@ -23,7 +23,7 @@ const DashWish = () => {
         product.map((card) => <Wishlist key={card.id} card={card}></Wishlist>)
       ) : (
         <div className="flex justify-center items-center text-xl font-bold text-gray-500">
-          <p>No products added yet.</p>
+          <p>Empty</p>
         </div>
       )}
     </div>

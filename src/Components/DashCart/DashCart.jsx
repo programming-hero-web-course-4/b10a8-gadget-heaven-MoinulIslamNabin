@@ -74,7 +74,7 @@ const DashCart = () => {
         product.map((card) => <Cart key={card.id} card={card}></Cart>)
       ) : (
         <div className="flex justify-center items-center text-xl font-bold text-gray-500">
-          <p>No products added yet.</p>
+          <p>Empty</p>
         </div>
       )}
     </div>

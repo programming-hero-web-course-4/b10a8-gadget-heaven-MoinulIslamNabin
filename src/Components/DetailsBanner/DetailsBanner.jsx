@@ -16,7 +16,16 @@ const DetailsBanner = () => {
           </p>
           <button
             onClick={() => {
-              navigate(-1);
+              navigate("/");
+              setTimeout(() => {
+                const scrollPosition =
+                  window.innerWidth >= 1024
+                    ? 1200
+                    : window.innerWidth >= 768
+                    ? 900
+                    : 850;
+                window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+              }, 100);
             }}
             className="btn rounded-full text-[#9538E2] font-extrabold"
           >
