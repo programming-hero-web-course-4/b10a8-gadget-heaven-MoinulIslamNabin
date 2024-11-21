@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import { addCart, getAllWish } from "../../utilities/localStorage";
+import { addCart, getAllCart, getAllWish } from "../../utilities/localStorage";
 import { useEffect, useState } from "react";
 
 const Wishlist = ({ card, handleRemoveWish }) => {
@@ -16,8 +16,7 @@ const Wishlist = ({ card, handleRemoveWish }) => {
   } = card;
 
   const handleCart = (card) => {
-    addCart(card);
-    handleRemoveWish(id);
+    handleRemoveWish(card);
   };
 
   return (

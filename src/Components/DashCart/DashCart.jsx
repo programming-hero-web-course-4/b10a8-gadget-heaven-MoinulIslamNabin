@@ -37,6 +37,13 @@ const DashCart = () => {
     setProduct(cart);
   };
 
+  const navigateToHome = () => {
+    navigate("/");
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 500);
+  };
+
   const handlePurchase = () => {
     if (product.length > 0) {
       clearCart();
@@ -70,12 +77,7 @@ const DashCart = () => {
           confirmButton:
             "bg-[#9538E2] px-36 md:px-52 text-white rounded-full font-bold",
         },
-      }).then(() => {
-        navigate("/");  
-        setTimeout(() => {
-          window.scrollTo({ top: 0, behavior: "smooth" });  
-        }, 100);
-      });
+      }).then(() => navigateToHome());
     } else {
       Swal.fire({
         title: "Cart is Empty",
@@ -92,12 +94,7 @@ const DashCart = () => {
 
           confirmButton: "bg-[#9538E2] px-36 md:px-52 text-white rounded-full font-bold",
       },
-    }).then(() => {
-      navigate("/");  
-      setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });  
-      }, 100);
-    });
+    }).then(() => navigateToHome());
   }
 };
 
@@ -151,10 +148,10 @@ const DashCart = () => {
       </div>
 
       {Array.isArray(product) && product.length !== 0 ? (
-        product.map((card) => (
+        product.map((card, index) => (
           <Cart
             handleRemoveCart={handleRemoveCart}
-            key={card.id}
+            key={card.id || index}
             card={card}
           ></Cart>
         ))

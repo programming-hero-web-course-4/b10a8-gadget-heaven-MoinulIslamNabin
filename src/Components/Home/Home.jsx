@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Vr from "../../assets/banner.jpg";
 import "./Home.css";
 import { Link, Outlet, useNavigation } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
   const navigation = useNavigation();
@@ -17,6 +18,8 @@ const Home = () => {
   }, []);
 
   return (
+    <>
+    
     <div className="container mx-auto px-14">
       <div className="flex items-center justify-center -translate-y-3/4 md:-translate-y-[40%] lg:-translate-y-1/4">
         <img
@@ -120,6 +123,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

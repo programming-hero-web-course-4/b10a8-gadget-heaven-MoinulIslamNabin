@@ -101,14 +101,42 @@ const removeCart = (id) => {
     transition: Slide,
   });
 };
-const removeWish = (id) => {
+const removeWish = (wishCard) => {
+  const cart = getAllCart();
+  const isExist = cart.find((item) => item.id == wishCard.id);
+  if (isExist) {
+    return toast.error("Product already exists!", {
+      position: "top-right",
+      autoClose: 1500,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Slide,
+    });
+  }
+  cart.push(wishCard);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  toast.success("Successfully added to cart!", {
+    position: "top-right",
+    autoClose: 1500,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    transition: Slide,
+  });
+
   const wish = getAllWish();
-  const remaining = wish.filter((item) => item.id != id);
+  const remaining = wish.filter((item) => item.id != wishCard.id);
   localStorage.setItem("wish", JSON.stringify(remaining));
 };
 const clearCart = () => {
   localStorage.removeItem("cart");
-  
 };
 
 export {

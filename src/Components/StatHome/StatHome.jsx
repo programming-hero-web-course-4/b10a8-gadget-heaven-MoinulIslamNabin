@@ -8,7 +8,7 @@ const StatHome = () => {
       <div className="navbar justify-between mb-4 pt-4">
         <div className="navbar-start">
           <a className="cursor-pointer text-xl text-black/80 font-bold">
-            Wishlist
+            Statistics
           </a>
         </div>
       </div>
